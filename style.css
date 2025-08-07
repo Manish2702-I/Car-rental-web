@@ -1,0 +1,764 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.bgcar{
+    min-height: 100vh;
+    width: 100%;
+    padding: 2vh 3vh;
+    background-image: url("./car\ mer.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    width: 100%;
+    background-color: aqua;
+    padding: 0 5vh;
+    border-radius: 10vh;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo span{
+    color: rgb(152, 60, 238);
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    font-weight: 100;
+    font-size: 1.6vh;
+}
+
+.searchicon input{
+    font-size: 2vh;
+    padding: 1vh 1vh;
+    border-radius: 10vh;
+    border: 1px solid black;
+}
+.para{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60vh;
+    padding: 0 5vh;
+}
+.para h1{
+    font-size: 10vh;
+    color: white;
+}
+.para p{
+    font-size: 2vh;
+    padding-top: 10vh;
+    color: white;
+}
+.section2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: bisque;
+    overflow-x: hidden;
+}
+.section2 h1{
+    font-size: 9vh;
+    padding: 4vh 6vh;
+}
+.sliderbox1{
+    height: 50vh;
+    width: 100%;
+    margin-top: 4vh;
+    display: flex;
+    gap: 2vh;
+    white-space: nowrap;
+    animation-name: anime;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.carbox1{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/1200x/a1/f8/37/a1f837bf14b6d7ba9067057d4faf0e93.jpg");
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+}
+.carbox1 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: white;
+}
+.carbox1 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox1 img:hover{
+     background-color: rgb(137, 137, 242);
+}
+.carbox2{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/736x/8a/bb/48/8abb48e646af1641a9070fefdcef5681.jpg");
+    background-size: cover;
+    position: relative;
+}
+.carbox2 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: black;
+}
+.carbox2 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox2 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox3{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/1200x/b6/ac/26/b6ac26e6ddbcf4adc924c95083089f45.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox3 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: white;
+}
+.carbox3 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox3 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox4{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/736x/d9/4b/66/d94b66499bc1c59d19ba828ff2f4bfac.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox4 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: black;
+}
+.carbox4 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox4 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox5{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/1200x/c4/b5/bf/c4b5bf2f590efd9353251cda512f0559.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox5 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: white;
+}
+.carbox5 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox5 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox6{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/736x/de/7d/ce/de7dcea641843c68b07b111e223d922a.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox6 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: black;
+}
+.carbox6 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox6 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox7{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/1200x/68/e2/d5/68e2d57bbb51cf28c66f4b72ea9b8804.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox7 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: white;
+}
+.carbox7 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox7 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox8{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/736x/e1/0c/20/e10c206fb172bead938525f184df1625.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox8 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: black;
+}
+.carbox8 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox8 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox9{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/736x/c4/d7/85/c4d7853717ef7d3209e1f62f9d0a310e.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox9 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: white;
+}
+.carbox9 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox9 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox29{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/1200x/77/c1/dc/77c1dc2eacc114b76188744c54e9f81f.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox29 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: black;
+}
+.carbox29 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox29 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox39{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/1200x/3b/90/bf/3b90bf8dbd40ff28b8b698015d3a8adc.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox39 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: white;
+}
+.carbox39 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox39 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.sliderbox2{
+    height: 50vh;
+    width: 100%;
+    margin-top: 4vh;
+    display: flex;
+    gap: 2vh;
+    white-space: nowrap;
+    animation-name: anime1;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+@keyframes anime1 {
+    to{
+        transform: translateX(0%);
+    }
+    from{
+        transform: translateX(-100%);
+    }
+}
+.carbox10{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/736x/18/b4/d3/18b4d3d46ee6fe570fd8cd9d93e1c1aa.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: inline-block;
+}
+.carbox10 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: black;
+}
+.carbox10 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox10 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox11{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/1200x/0c/c1/af/0cc1afeb4800078eff5cbaa22e7ba5a9.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox11 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: white;
+}
+.carbox11 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox11 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox12{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/736x/f5/ba/86/f5ba8615b07950197bab37cd601074f1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox12 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: black;
+}
+.carbox12 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox12 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox13{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/736x/e0/ad/6b/e0ad6b5ba450ea891e70db9c67884a6b.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox13 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: white;
+}
+.carbox13 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox13 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox14{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/1200x/8f/e8/c5/8fe8c5b7232d20b8e634730a814c7d2c.jpg");
+    background-size: cover;
+    background-position: center;position: relative;
+}
+.carbox14 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: black;
+}
+.carbox14 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox14 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox15{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/736x/39/79/2b/39792bd2ceca6eef9004c1a989d651e1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox15 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: white;
+}
+.carbox15 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox15 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox16{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/1200x/76/0c/c3/760cc3499c9e882a6f4c79eeb7a5517e.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox16 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: black;
+}
+.carbox16 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox16 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox17{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/736x/a8/85/58/a88558259661dc46931f24534b0fdd2c.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox17 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: white;
+}
+.carbox17 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox17 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox18{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/736x/4e/a2/29/4ea2298a19ef0b736dfbe25cf9a31bae.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox18 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: black;
+}
+.carbox18 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox18 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox19{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/736x/91/f3/26/91f326e7af4cbffb0a17237c9b4e8131.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox19 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: black;
+}
+.carbox19 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox19 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox20{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/736x/4e/a2/29/4ea2298a19ef0b736dfbe25cf9a31bae.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox20 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: black;
+}
+.carbox20 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox20 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.carbox21{
+    height: 40vh;
+    width: 35vh;
+    background-color: white;
+    flex-shrink: 0;
+    background-image: url("https://i.pinimg.com/1200x/fe/10/ec/fe10ec2790fb354ac39a74c0993bbfe1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carbox21 h2{
+    font-size: 3vh;
+    padding: 3vh 4vh;
+    color: black;
+}
+.carbox21 img{
+    font-size: 3vh;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    rotate: -35deg;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carbox21 img:hover{
+    background-color: rgb(137, 137, 242);
+}
+.section3{
+    height: 70vh;
+    width: 100%;
+    background-color: blue;
+}
