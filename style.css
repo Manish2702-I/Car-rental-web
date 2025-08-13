@@ -25,6 +25,7 @@ html,body{
     background-color: aqua;
     padding: 0 5vh;
     border-radius: 10vh;
+    position: static;
 }
 .logo{
     display: flex;
@@ -39,6 +40,7 @@ html,body{
     gap: 4vw;
     font-weight: 100;
     font-size: 1.6vh;
+    cursor: pointer;
 }
 
 .searchicon input{
@@ -46,6 +48,16 @@ html,body{
     padding: 1vh 1vh;
     border-radius: 10vh;
     border: 1px solid black;
+}
+.b{
+    font-size: 3vh;
+    background-color: aqua;
+    color: black;
+    border: 1px solid black;
+    display: none;
+}
+.b:hover{
+    background-color: white;
 }
 .para{
     display: flex;
@@ -1009,7 +1021,7 @@ html,body{
     color: white;
     margin-top: 2vh;
 }
-button{
+.a{
     font-size: 4vh;
     margin-left: 4vh;
     padding: 1vh 2vh;
@@ -1019,7 +1031,7 @@ button{
     border: none;
     cursor: pointer;
 }
-button:hover{
+.a:hover{
     background-color: rgb(121, 62, 217);
 }
 .section5{
@@ -1085,4 +1097,1105 @@ button:hover{
     font-size: 2vh;
     padding-top: 3vh;
     line-height: 4vh;
+}
+@media (max-width:600px) {
+    .bgcar{
+        min-height: 47vh;
+        width: 100%;
+        padding: 1vh 1vh;
+        background-image: url("./car\ mer.jpg");
+        background-size: cover;
+        
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4vh;
+        width: 100%;
+        background-color: aqua;
+        padding: 0 1vh;
+        border-radius: 10vh;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        font-size: 1.5vh;
+    }
+    .logo span{
+        color: rgb(152, 60, 238);
+    }
+    .icon{
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+        font-weight: 100;
+        font-size: 1.4vh;
+        display: none;
+        padding-left: 1vh;
+        cursor: pointer;
+    }
+    .searchicon input{
+        font-size: 2vh;
+        padding: 1vh 1vh;
+        border-radius: 10vh;
+        border: 1px solid black;
+        display: none;
+    }
+    .b{
+        font-size: 1.3vh;
+        background-color: aqua;
+        color: black;
+        border: 1px solid black;
+        display: inline-block;
+        padding: 1vh 1vh;
+        border-radius: 10vh;
+    }
+    .b:hover{
+        background-color: white;
+    }
+    .para{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10vh;
+        padding: 0 1vh;
+    }
+    .para h1{
+        font-size: 3vh;
+        color: white;
+    }
+    .para p{
+        font-size: 1.4vh;
+        padding-top: 5vh;
+        color: white;
+        padding-left: 1vh;
+        text-align: right;
+    }
+    .section2{
+        min-height: 47vh;
+        width: 100%;
+        background-color: bisque;
+        overflow-x: hidden;
+    }
+    .section2 h1{
+        font-size: 4vh;
+        padding: 2vh 2vh;
+    }
+    .sliderbox1{
+        height: 26vh;
+        width: 100%;
+        margin-top: 1vh;
+        display: flex;
+        gap: 2vh;
+        white-space: nowrap;
+        animation-name: anime;
+        animation-timing-function: linear;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+    }
+    @keyframes anime {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(-100%);
+        }
+    }
+    .carbox1{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/1200x/a1/f8/37/a1f837bf14b6d7ba9067057d4faf0e93.jpg");
+        background-size: cover;
+        position: relative;
+        display: inline-block;
+    }
+    .carbox1 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: white;
+    }
+    .carbox1 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox1 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox2{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/736x/8a/bb/48/8abb48e646af1641a9070fefdcef5681.jpg");
+        background-size: cover;
+        position: relative;
+    }
+    .carbox2 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: black;
+    }
+    .carbox2 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox2 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox3{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/1200x/b6/ac/26/b6ac26e6ddbcf4adc924c95083089f45.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox3 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: white;
+    }
+    .carbox3 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox3 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox4{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/736x/d9/4b/66/d94b66499bc1c59d19ba828ff2f4bfac.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox4 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: black;
+    }
+    .carbox4 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox4 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox5{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/1200x/c4/b5/bf/c4b5bf2f590efd9353251cda512f0559.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox5 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: white;
+    }
+    .carbox5 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox5 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox6{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/736x/de/7d/ce/de7dcea641843c68b07b111e223d922a.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox6 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: black;
+    }
+    .carbox6 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox6 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox7{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/1200x/68/e2/d5/68e2d57bbb51cf28c66f4b72ea9b8804.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox7 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: white;
+    }
+    .carbox7 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox7 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox8{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/736x/e1/0c/20/e10c206fb172bead938525f184df1625.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox8 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: black;
+    }
+    .carbox8 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox8 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox9{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/736x/c4/d7/85/c4d7853717ef7d3209e1f62f9d0a310e.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox9 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: white;
+    }
+    .carbox9 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox9 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox29{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/1200x/77/c1/dc/77c1dc2eacc114b76188744c54e9f81f.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox29 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: black;
+    }
+    .carbox29 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox29 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox39{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/1200x/3b/90/bf/3b90bf8dbd40ff28b8b698015d3a8adc.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox39 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: white;
+    }
+    .carbox39 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox39 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .sliderbox2{
+        height: 26vh;
+        width: 100%;
+        margin-top: 1vh;
+        display: flex;
+        gap: 2vh;
+        white-space: nowrap;
+        animation-name: anime1;
+        animation-timing-function: linear;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+    }
+@keyframes anime1 {
+        to{
+            transform: translateX(0%);
+        }
+        from{
+            transform: translateX(-100%);
+        }
+    }
+    .carbox10{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/736x/18/b4/d3/18b4d3d46ee6fe570fd8cd9d93e1c1aa.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: inline-block;
+    }
+    .carbox10 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: black;
+    }
+    .carbox10 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox10 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox11{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/1200x/0c/c1/af/0cc1afeb4800078eff5cbaa22e7ba5a9.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox11 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: white;
+    }
+    .carbox11 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox11 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox12{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/736x/f5/ba/86/f5ba8615b07950197bab37cd601074f1.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox12 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: black;
+    }
+    .carbox12 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox12 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox13{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/736x/e0/ad/6b/e0ad6b5ba450ea891e70db9c67884a6b.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox13 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: white;
+    }
+    .carbox13 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox13 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox14{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/1200x/8f/e8/c5/8fe8c5b7232d20b8e634730a814c7d2c.jpg");
+        background-size: cover;
+        background-position: center;position: relative;
+    }
+    .carbox14 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: black;
+    }
+    .carbox14 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox14 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox15{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/736x/39/79/2b/39792bd2ceca6eef9004c1a989d651e1.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox15 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: white;
+    }
+    .carbox15 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox15 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox16{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/1200x/76/0c/c3/760cc3499c9e882a6f4c79eeb7a5517e.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox16 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: black;
+    }
+    .carbox16 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox16 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox17{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/736x/a8/85/58/a88558259661dc46931f24534b0fdd2c.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox17 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: white;
+    }
+    .carbox17 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox17 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox18{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/736x/4e/a2/29/4ea2298a19ef0b736dfbe25cf9a31bae.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox18 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: black;
+    }
+    .carbox18 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox18 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox19{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/736x/91/f3/26/91f326e7af4cbffb0a17237c9b4e8131.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox19 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: black;
+    }
+    .carbox19 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox19 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox20{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/736x/4e/a2/29/4ea2298a19ef0b736dfbe25cf9a31bae.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox20 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: black;
+    }
+    .carbox20 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox20 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .carbox21{
+        height: 25vh;
+        width: 26vh;
+        background-color: white;
+        flex-shrink: 0;
+        background-image: url("https://i.pinimg.com/1200x/fe/10/ec/fe10ec2790fb354ac39a74c0993bbfe1.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .carbox21 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: black;
+    }
+    .carbox21 img{
+        font-size: 1.4vh;
+        background-color: white;
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        rotate: -35deg;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .carbox21 img:hover{
+        background-color: rgb(137, 137, 242);
+    }
+    .section3{
+        height: 35vh;
+        width: 100%;
+        background-color: white;
+        padding: 1vh 1vh;
+    }
+    .sec3{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .sec3 h1{
+        font-size: 3vh;
+    }
+    .sec3 button{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        text-align: center;
+        border-radius: 10vh;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+    .sec3 button:hover{
+        background-color: white;
+        color: black;
+    }
+    .sec4{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2vh;
+    }
+    .section3-box1{
+        height: 23vh;
+        width: 23vh;
+        margin-top: 3vh;
+        background-image: url("https://i.pinimg.com/736x/75/73/fd/7573fd89a32715746337935d937defce.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 2vh;
+    }
+    .car-book{
+        display: flex;
+        justify-content: space-between;
+        padding: 1vh 1vh;
+    }
+    .car-book h3{
+        font-size: 1.4vh;
+        font-weight: 100;
+        color: white;
+    }
+    .car-book button{
+        font-size: 1.3vh;
+        padding: 1vh 1vh;
+        text-align: center;
+        border-radius: 10vh;
+        border: none;
+        cursor: pointer;
+    }
+    .car-book button:hover{
+        background-color: white;
+        color: black;
+    }
+    .section3-box1 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+    }
+    .section3-box2{
+        height: 23vh;
+        width: 23vh;
+        background-image: url("https://i.pinimg.com/1200x/48/3a/ae/483aae27ccdb18cd9529a9a0a050e20c.jpg");
+        margin-top: 3vh;
+        background-size: cover;
+        border-radius: 2vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .section3-box2 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: black;
+    }
+    .car-book1{
+        display: flex;
+        justify-content: space-between;
+        padding: 1vh 1vh;
+    }
+    .car-book1 h3{
+        font-size: 1.4vh;
+        font-weight: 100;
+        color: white;
+    }
+    .car-book1 button{
+        font-size: 1.3vh;
+        padding: 1vh 1vh;
+        text-align: center;
+        border-radius: 10vh;
+        border: none;
+        cursor: pointer;
+    }
+    .car-book1 button:hover{
+        background-color: white;
+        color: black;
+    }
+    .section3-box3{
+        height: 23vh;
+        width: 23vh;
+        background-image: url("https://i.pinimg.com/1200x/e1/12/a1/e112a1c5caa9de503ca5def2294996d5.jpg");
+        background-size: cover;
+        margin-top: 3vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 2vh;
+    }
+    .section3-box3 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+    }
+    .car-book3{
+        display: flex;
+        justify-content: space-between;
+        padding: 1vh 1vh;
+    }
+    .car-book3 h3{
+        font-size: 1.4vh;
+        font-weight: 100;
+        color: white;
+    }
+    .car-book3 button{
+        font-size: 1.3vh;
+        padding: 1vh 1vh;
+        text-align: center;
+        border-radius: 10vh;
+        border: none;
+        cursor: pointer;
+    }
+    .car-book3 button:hover{
+        background-color: white;
+        color: black;
+    }
+    .section3-box4{
+        height: 23vh;
+        width: 23vh;
+        background-image: url("https://i.pinimg.com/736x/33/11/6f/33116fe4122ee922f9ac10cdc13c5b13.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 3vh;
+        border-radius: 2vh;
+    }
+    .section3-box4 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: white;
+    }
+    .car-book4{
+        display: flex;
+        justify-content: space-between;
+        padding: 1vh 1vh;
+    }
+    .car-book4 h3{
+        font-size: 1.4vh;
+        font-weight: 100;
+        color: white;
+    }
+    .car-book4 button{
+        font-size: 1.3vh;
+        padding: 1vh 1vh;
+        text-align: center;
+        border-radius: 10vh;
+        border: none;
+        cursor: pointer;
+    }
+    .car-book4 button:hover{
+        background-color: white;
+        color: black;
+    }
+    .section3-box5{
+        height: 23vh;
+        width: 23vh;
+        background-image: url("https://i.pinimg.com/1200x/e4/7c/80/e47c803568915c8a7fedbcc40776d62c.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 2vh;
+        margin-top: 3vh;
+    }
+    .section3-box5 h2{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        color: black;
+    }
+    .car-book5{
+        display: flex;
+        justify-content: space-between;
+        padding: 1vh 1vh;
+    }
+    .car-book5 h3{
+        font-size: 1.4vh;
+        font-weight: 100;
+        color: white;
+    }
+    .car-book5 button{
+        font-size: 1.3vh;
+        padding: 1vh 1vh;
+        text-align: center;
+        border-radius: 10vh;
+        border: none;
+        cursor: pointer;
+    }
+    .car-book5 button:hover{
+        background-color: white;
+        color: black;
+    }
+    .section4{
+    height: 37vh;
+    width: 100%;
+    background-image: url("https://i.pinimg.com/1200x/e6/87/8d/e6878da4dae00fc93f33d617e2add629.jpg");
+    background-size: cover;
+    background-position: center;
+}
+    .about{
+        display: flex;
+        justify-content: space-between;
+        padding: 2vh 1vh;
+    }
+    .about h1{
+        font-size: 3vh;
+        
+    }
+    .about-box{
+        height: 10vh;
+        width: 10vh;
+        background-color: skyblue;
+        text-align: center;
+        padding-top: 1vh;
+        border-radius: 1vh;
+    }
+    .about-box h2{
+        font-size: 2vh;
+        color: white;
+        font-weight: 100;
+    }
+    .about-box p{
+        font-size: 1.4vh;
+        color: white;
+        margin-top: 1vh;
+    }
+    .a{
+        font-size: 2vh;
+        margin-left: 2vh;
+        padding: 1vh 2vh;
+        background-color: rgb(168, 93, 239);
+        color: white;
+        border-radius: 10vh;
+        border: none;
+        cursor: pointer;
+        margin-top: 13vh;
+    }
+    .a:hover{
+        background-color: rgb(121, 62, 217);
+    }
+    .section5{
+        height: 40vh;
+        width: 100%;
+        background-color: aquamarine;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-top: 2vh;
+        gap: 2.3vh;
+    }
+    .section5-box1{
+        height: 100%;
+        width: 18vh;
+    }
+    .section5-box1 .p{
+        color: black;
+        margin-top: 1vh;
+    }
+    .p input{
+        font-size: 1.4vh;
+        padding: 1vh 1vh;
+        border-radius: 10vh;
+        border: 1px solid black;
+        cursor: pointer;
+        margin-top: 1vh;
+    }
+    .section5-box2{
+        height: 100%;
+        width: 8vh;
+    }
+    .section5-box2 h3{
+        font-size: 2vh;
+    }
+    .section5-box2 ul{
+        list-style: none;
+        font-size: 1.4vh;
+        padding-top: 1vh;
+        line-height: 3vh;
+    }
+    .section5-box3{
+        height: 100%;
+        width: 8vh;
+    }
+    .section5-box3 h3{
+        font-size: 2vh;
+    }
+    .section5-box3 ul{
+        list-style: none;
+        font-size: 1.4vh;
+        padding-top: 1vh;
+        line-height: 3vh;
+    }
+    .section5-box4{
+        height: 100%;
+        width: 8vh;
+    }
+    .section5-box4 h3{
+        font-size: 2vh;
+    }
+    .section5-box4 ul{
+        list-style: none;
+        font-size: 1.4vh;
+        padding-top: 1vh;
+        line-height: 3vh;
+    }
 }
