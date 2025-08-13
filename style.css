@@ -42,22 +42,14 @@ html,body{
     font-size: 1.6vh;
     cursor: pointer;
 }
-
+.b{
+    display: none
+}
 .searchicon input{
     font-size: 2vh;
     padding: 1vh 1vh;
     border-radius: 10vh;
     border: 1px solid black;
-}
-.b{
-    font-size: 3vh;
-    background-color: aqua;
-    color: black;
-    border: 1px solid black;
-    display: none;
-}
-.b:hover{
-    background-color: white;
 }
 .para{
     display: flex;
@@ -1143,16 +1135,9 @@ html,body{
         display: none;
     }
     .b{
-        font-size: 1.3vh;
-        background-color: aqua;
-        color: black;
-        border: 1px solid black;
-        display: inline-block;
-        padding: 1vh 1vh;
-        border-radius: 10vh;
-    }
-    .b:hover{
-        background-color: white;
+        font-size: 1.6vh;
+        display: block;
+        padding-right: 1vh;
     }
     .para{
         display: flex;
@@ -1896,6 +1881,10 @@ html,body{
         display: flex;
         justify-content: space-evenly;
         gap: 2vh;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        scrollbar-width: none;    
     }
     .section3-box1{
         height: 23vh;
