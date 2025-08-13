@@ -1880,7 +1880,7 @@ html,body{
     .sec4{
         display: flex;
         justify-content: space-evenly;
-        gap: 2vh;
+        gap: 1.2vh;
         overflow-x: auto;
         overflow-y: hidden;
         scroll-behavior: smooth;
@@ -1908,7 +1908,7 @@ html,body{
         color: white;
     }
     .car-book button{
-        font-size: 1.3vh;
+        font-size: 1.1vh;
         padding: 1vh 1vh;
         text-align: center;
         border-radius: 10vh;
@@ -1950,7 +1950,7 @@ html,body{
         color: white;
     }
     .car-book1 button{
-        font-size: 1.3vh;
+        font-size: 1.1vh;
         padding: 1vh 1vh;
         text-align: center;
         border-radius: 10vh;
@@ -1987,7 +1987,7 @@ html,body{
         color: white;
     }
     .car-book3 button{
-        font-size: 1.3vh;
+        font-size: 1.1vh;
         padding: 1vh 1vh;
         text-align: center;
         border-radius: 10vh;
@@ -2025,7 +2025,7 @@ html,body{
         color: white;
     }
     .car-book4 button{
-        font-size: 1.3vh;
+        font-size: 1.1vh;
         padding: 1vh 1vh;
         text-align: center;
         border-radius: 10vh;
@@ -2063,7 +2063,7 @@ html,body{
         color: white;
     }
     .car-book5 button{
-        font-size: 1.3vh;
+        font-size: 1.1vh;
         padding: 1vh 1vh;
         text-align: center;
         border-radius: 10vh;
